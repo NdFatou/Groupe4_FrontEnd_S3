@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.restaurant-name {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.menu-title {
+    font-size: 5rem;
+    color: #C84C24;
+    margin: 1rem 0 2rem;
+}
+
+/* Navigation Buttons */
+.menu-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.menu-btn {
+    padding: 0.8rem 3rem;
+    font-size: 1.2rem;
+    background-color: #C5A572;
+    border: none;
+    border-radius: 25px;
+    color: black;
+}
+
+/* Menu Grid */
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.menu-item {
+    flex: 0 0 calc(50% - 1rem);
+    margin-bottom: 2rem;
+}
+
+.item-content {
+    display: flex;
+    gap: 1rem;
+}
+
+.item-info {
+    flex: 0 0 60%;
+}
+
+.item-info h3 {
+    font-size: 1.8rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.price {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.description {
+    color: #666;
+    line-height: 1.4;
+}
+
+.item-image {
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+}
+
+.item-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .menu-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .menu-item {
+        flex: 0 0 100%;
+    }
+
+    .item-content {
+        flex-direction: column;
+    }
+
+    .item-info, .item-image {
+        flex: 0 0 100%;
+    }
+
+    .menu-title {
+        font-size: 3rem;
+    }
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #000;
+    margin: 2rem 0;
+}
+
+.menu-sections {
+    display: flex;
+    gap: 4rem;
+    padding: 4rem 0;
+}
+
+.menu-section {
+    flex: 1;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.section-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.boisson-list, .dessert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.boisson-row, .dessert-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.b-nom, .d-nom {
+    font-size: 1rem;
+}
+
+.b-prix, .d-prix {
+    font-size: 1rem;
+    white-space: nowrap;
+} 
