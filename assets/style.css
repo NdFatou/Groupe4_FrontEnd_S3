@@ -2,14 +2,129 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: hsl(39, 50%, 92%);
 }
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin:0 auto;
     padding: 2rem;
 }
+
+/* Ajout de styles pour la barre de menu */
+.home {
+    background: url('/assets/images/fond2.png') no-repeat ;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#navbar{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right,#f2c790,#9f681c);
+    padding-top: 1rem;
+}
+
+.navbar-toggle {
+    display: none;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-item{
+    padding: 0.5rem;
+}
+
+.nav-links a{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem 1rem;
+}
+
+.nav-links a.active, .nav-links a:hover{
+    background: rgb(248, 206, 91);
+}
+
+.nav-links .contact-button {
+    background-color: #3c5403; /* Couleur du bouton */
+    color: #ffffff; /* Couleur du texte */
+    padding: 1rem 1rem; /* Espacement interne */
+    border-radius:50px ; /* Coins arrondis */
+    text-decoration: none; /* Enlève le soulignement */
+    transition: background-color 0.3s; /* Effet de transition */
+    border: solid #fff; 
+    text-transform: none;
+}
+
+.contact-button:hover {
+    background-color: #9db013; /* Couleur au survol */
+}
+
+/* Ajout de styles pour le logo */
+.navigation img {
+    width: 110px; /* Ajustez la largeur selon vos besoins */
+    height: auto; /* Conserve le ratio d'aspect de l'image */
+    margin-left:  1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.welcome-section {
+    text-align: center; /* Centre le texte et les boutons */
+    margin: 8rem 0px; /* Marge autour de la section */
+    width: 50%;
+}
+
+.welcome-text {
+    font-size: 5rem; /* Taille de police pour le texte de bienvenue */
+    color: #fff; /* Couleur du texte */
+}
+
+.message{
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em; /* Marge au-dessus des boutons */
+}
+
+.action-button {
+    background-color: #9f681c;
+    color: #ffffff; /* Couleur du texte */
+    padding: 1rem 2rem; /* Espacement interne */
+    border-radius: 50px; /* Coins arrondis */
+    text-decoration: none; /* Enlève le soulignement */
+    margin: 0 1.5rem; /* Marge entre les boutons */
+    transition: background-color 0.3s; /* Effet de transition */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.light{
+    background-color: transparent;
+    border: solid;
+    border-color: #9f681c;
+}
+
+.action-button:hover, .menu-btn:hover {
+    background-color: #ecc38a; /* Couleur au survol */
+} 
+
 
 /* Header Styles */
 header {
@@ -17,15 +132,12 @@ header {
     margin-bottom: 3rem;
 }
 
-.restaurant-name {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.menu-title {
-    font-size: 5rem;
+.menu-title, .list-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 6rem;
     color: #C84C24;
-    margin: 1rem 0 2rem;
+    margin: 4rem 0 3rem;
 }
 
 /* Navigation Buttons */
@@ -38,10 +150,16 @@ header {
 
 .menu-btn {
     padding: 0.8rem 3rem;
-    font-size: 1.2rem;
-    background-color: #C5A572;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #dfb666;
     border: none;
     border-radius: 25px;
+    margin-left: 4rem;
+}
+
+.menu-btn a{
+    text-decoration: none;
     color: black;
 }
 
@@ -50,6 +168,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    padding-bottom: 20px;
 }
 
 .menu-item {
@@ -72,7 +191,8 @@ header {
 }
 
 .price {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
     margin: 0.5rem 0;
 }
 
@@ -94,8 +214,139 @@ header {
     object-fit: cover;
 }
 
+
 /* Media Queries */
+@media screen and (max-width: 1500px) {
+    
+    /* Barre de menu*/
+    .nav-item{
+        padding: 0.5rem;
+    }
+    
+    .nav-links a{
+        font-size: 1.1rem;
+        padding: 0.5rem 0.5rem;
+    }
+
+      /* titre*/
+      .list-title{
+        font-size: 4rem;
+    }
+
+    .welcome-section{
+        margin-left: 3rem; 
+        margin-top: 8rem;
+        text-align: center; /* Centre le texte et les boutons */
+        width: 60%;
+    }
+
+    .welcome-text {
+        font-size: 5rem;
+    }
+    
+    .message{
+        font-size: 1.4em;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+     /* Bare de menu*/
+     .nav-links {
+        display: none; /* Masquer les liens par défaut */
+        flex-direction: column; /* Aligner les liens verticalement */
+        position: absolute; /* Positionner le menu */
+        top: 100px; /* Ajuster selon la hauteur de la barre de navigation */
+        left: 0;
+        right: 0;
+        background: #f2c790; /* Couleur de fond du menu */
+        height: 60vh;
+    }
+
+    .nav-item{
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    .nav-item a{
+        font-size: 1.2em;
+    }
+
+    .nav-links.active {
+        display: flex; /* Afficher les liens lorsque le menu est actif */
+    }
+
+    .navbar-toggle {
+        display: block; /* Afficher le bouton sur les petits écrans */
+        padding-right: 2rem;
+    }
+   
+
+    .welcome-section{
+        margin-left: 2rem;
+        text-align: center; /* Centre le texte et les boutons */
+        width: 65%;
+    }
+
+    .welcome-text {
+        font-size: 5rem;
+    }
+    
+    .message{
+        font-size: 1.4em;
+    }
+    
+    .button-container {
+        margin-top: 5em; /* Marge au-dessus des boutons */
+    }
+    
+    .action-button {
+        padding: 1.5rem 2rem; /* Espacement interne */
+        margin: 0 2rem; /* Marge entre les boutons */
+        font-size: 1.4rem;
+    }
+
+    .list-title {
+        font-size: 4rem;
+    }
+}
+
+
+@media screen and (max-width: 952px) {
+
+   /* Page accueil*/
+
+   .welcome-section {
+    width: 80%;
+
+ }
+
+
+ .welcome-text {
+     font-size: 4.5rem;
+ }
+ 
+ .message{
+     font-size: 1.1em;
+ }
+ 
+ .button-container {
+     margin-top:6em; /* Marge au-dessus des boutons */
+ }
+ 
+ .list-title {
+    font-size: 3.3rem;
+
+}
+}
+
+
 @media screen and (max-width: 768px) {
+
+    /* Page menu*/
     .menu-nav {
         flex-direction: column;
         align-items: center;
@@ -116,6 +367,10 @@ header {
 
     .menu-title {
         font-size: 3rem;
+    }
+
+    .action-button {
+        margin: 0 1rem; /* Marge entre les boutons */
     }
 }
 
@@ -147,6 +402,12 @@ hr {
     height: 2rem;
 }
 
+.section-icon img{
+    width: 2rem;
+    height: 2rem;
+    background-color:#faf5ed
+}
+
 .section-header h2 {
     font-size: 2rem;
     margin: 0;
@@ -171,4 +432,33 @@ hr {
 .b-prix, .d-prix {
     font-size: 1rem;
     white-space: nowrap;
-} 
+}
+
+/* Ajout de styles pour le tableau des employés */
+table {
+    width: 80%; /* Ajustez la largeur selon vos besoins */
+    margin: 2rem auto; /* Centre le tableau horizontalement */
+    border-collapse: collapse; /* Supprime les espaces entre les cellules */
+}
+
+th, td {
+    padding: 1rem; /* Espacement interne des cellules */
+    text-align: left; /* Alignement du texte à gauche */
+    border: 1px solid #ddd; /* Bordure légère autour des cellules */
+}
+
+th {
+    background-color: #f2c790; /* Couleur de fond pour les en-têtes */
+    color: #333; /* Couleur du texte des en-têtes */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Couleur de fond pour les lignes paires */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Couleur de fond au survol des lignes */
+}
+
+
+

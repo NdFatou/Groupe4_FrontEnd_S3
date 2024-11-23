@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Amadou FAYE</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <section class="navigation">
+        <div>
+            <nav id="navbar">
+                <div class="navbar-brand">
+                    <a href="index.html">
+                        <img src="assets/images/logo2.png" alt="Logo restaurant">
+                    </a>
+                </div>
+                <div class="navbar-toggle" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('active');">
+                    ☰
+                </div>
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="index.html" >Accueil</a></li>
+                    <li class="nav-item"><a href="menu.html" class="active">Menu</a></li>
+                    <li class="nav-item"><a href="#">Réservation</a></li>
+                    <li class="nav-item"><a href="#">Galerie</a></li>
+                    <li class="nav-item"><a href="#">Témoignages clients</a></li>
+                    <li class="nav-item"><a href="employe.html">Employes</a></li>
+                    <li class="nav-item btn"><a href="#contact" class="contact-button">Nous Contacter</a></li>
+                </ul>
+            </nav>
+        </div>
+       
+    </section>
+
+    <section>
+            <div></div>
+                <h2 class="menu-title">LE MENU</h2>
+            </div>
+            <div class="menu-nav">
+                
+                <button class="menu-btn"><a href="#plats">PLATS</a></button>
+                <button class="menu-btn"><a href="#boisson">BOISSON</a></button>
+                <button class="menu-btn"><a href="#dessert">DESSERT</a></button>
+            </div>
+    
+            <div class="container">
+                
+                <hr>
+                <div class="menu-section" id="plats">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="item-content">
+                                <div class="item-info">
+                                    <h3>Pizza Pimento</h3>
+                                    <p class="price">2000 fcfa</p>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                </div>
+                                <div class="item-image">
+                                    <img src="assets/images/pizza.jpeg" alt="Pizza Pimento">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-content">
+                                <div class="item-info">
+                                    <h3>Pannini Milano</h3>
+                                    <p class="price">3000 fcfa</p>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                </div>
+                                <div class="item-image">
+                                    <img src="assets/images/pannini.jpeg" alt="Pannini Milano">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="menu-grid">
+                            <div class="menu-item">
+                                <div class="item-content">
+                                    <div class="item-info">
+                                        <h3>Double burger</h3>
+                                        <p class="price">6000 fcfa</p>
+                                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="assets/images/burger.jpeg" alt="Pizza Pimento">
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="menu-item">
+                                <div class="item-content">
+                                    <div class="item-info">
+                                        <h3>Soupou kandia</h3>
+                                        <p class="price">6000 fcfa</p>
+                                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="assets/images/skandia.jpeg" alt="Pannini Milano">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="menu-grid">
+                                <div class="menu-item">
+                                    <div class="item-content">
+                                        <div class="item-info">
+                                            <h3>Riz au poisson</h3>
+                                            <p class="price">3000 fcfa</p>
+                                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                        </div>
+                                        <div class="item-image">
+                                            <img src="assets/images/rpoisson.jpeg" alt="Pizza Pimento">
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="menu-item">
+                                    <div class="item-content">
+                                        <div class="item-info">
+                                            <h3>Yassa poulet</h3>
+                                            <p class="price">5000 fcfa</p>
+                                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                        </div>
+                                        <div class="item-image">
+                                            <img src="assets/images/ypoulet.jpeg" alt="Pannini Milano">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+            <hr>
+
+            <div class="menu-sections" id="boisson">
+                <div class="menu-section">
+                    <div class="section-header">
+                        <img src="assets/icons/drink-icon.png" alt="Boisson icon" class="section-icon">
+                        <h2>Boisson</h2>
+                    </div>
+                    
+                    <div class="boisson-list">
+                        <div class="boisson-row">
+                            <span class="b-nom">Margarita classique</span>
+                            <span class="b-prix">2000 FCFA</span>
+                        </div>
+                        <div class="boisson-row">
+                            <span class="b-nom">Cocktail à la mangue</span>
+                            <span class="b-prix">2000 FCFA</span>
+                        </div>
+                        <div class="boisson-row">
+                            <span class="b-nom">Macchiato glacé au caramel</span>
+                            <span class="b-prix">2000 FCFA</span>
+                        </div>
+                        <div class="boisson-row">
+                            <span class="b-nom">Frappuccino au thé vert</span>
+                            <span class="b-prix">2000 FCFA</span>
+                        </div>
+                        <div class="boisson-row">
+                            <span class="b-nom">Smoothie ananas-coco</span>
+                            <span class="b-prix">2000 FCFA</span>
+                        </div>
+                        <div class="boisson-row">
+                            <span class="b-nom">Mojito à la framboise</span>
+                            <span class="b-prix">2000 FCFA</span>
+                        </div>
+                        <div class="boisson-row">
+                            <span class="b-nom">Sparkler aux mûres et au gingembre</span>
+                            <span class="b-prix">2000 FCFA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-section" id="dessert">
+                    <div class="section-header">
+                        <img src="assets/icons/dessert-icon.jpeg" alt="Dessert icon" class="section-icon">
+                        <h2>Dessert</h2>
+                    </div>
+                    
+                    <div class="dessert-list">
+                        <div class="dessert-row">
+                            <span class="d-nom">Mousse au chocolat</span>
+                            <span class="d-prix">2000 FCFA</span>
+                        </div>
+                        <div class="dessert-row">
+                            <span class="d-nom">Tarte aux pommes</span>
+                            <span class="d-prix">2000 FCFA</span>
+                        </div>
+                        <div class="dessert-row">
+                            <span class="d-nom">Charlotte aux fraises</span>
+                            <span class="d-prix">2000 FCFA</span>
+                        </div>
+                        <div class="dessert-row">
+                            <span class="d-nom">Tarte aux fruits</span>
+                            <span class="d-prix">2000 FCFA</span>
+                        </div>
+                        <div class="dessert-row">
+                            <span class="d-nom">Tiramisu</span>
+                            <span class="d-prix">2000 FCFA</span>
+                        </div>
+                        <div class="dessert-row">
+                            <span class="d-nom">Gâteau de lave au chocolat</span>
+                            <span class="d-prix">2000 FCFA</span>
+                        </div>
+                        <div class="dessert-row">
+                            <span class="d-nom">Gâteau au fromage</span>
+                            <span class="d-prix">2000 FCFA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html> 

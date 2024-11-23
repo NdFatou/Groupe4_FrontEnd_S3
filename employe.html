@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/style.css">
+    <title>Restaurant Amadou FAYE</title>
+</head>
+<body>
+    <section class="navigation">
+        <div>
+            <nav id="navbar">
+                <div class="navbar-brand">
+                    <a href="index.html">
+                        <img src="assets/images/logo2.png" alt="Logo restaurant">
+                    </a>
+                </div>
+                <div class="navbar-toggle" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('active');">
+                    ☰
+                </div>
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="index.html" >Accueil</a></li>
+                    <li class="nav-item"><a href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a href="#">Réservation</a></li>
+                    <li class="nav-item"><a href="#">Galerie</a></li>
+                    <li class="nav-item"><a href="#">Témoignages clients</a></li>
+                    <li class="nav-item"><a href="employe.html" class="active">Employes</a></li>
+                    <li class="nav-item btn"><a href="#contact" class="contact-button">Nous Contacter</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+    </section> 
+   
+    <!-- Ajout d'un tableau pour les employés -->
+     <section>
+        <div>
+            <h2 class="list-title">Liste des employes</h2>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Prénom</th>
+                    <th>Nom</th>
+                    <th>Département</th>
+                    <th>Poste</th>
+                    <th>Salaire</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Marie</td>
+                    <td>NDIAYE</td>
+                    <td>Vente</td>
+                    <td>Manager</td>
+                    <td>500000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jean</td>
+                    <td>FAYE</td>
+                    <td>Marketing</td>
+                    <td>Assistant</td>
+                    <td>250000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Ibrahima</td>
+                    <td>FALL</td>
+                    <td>Vente</td>
+                    <td>Commercial</td>
+                    <td>400000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Bousso</td>
+                    <td>LEYE</td>
+                    <td>Informatique</td>
+                    <td>Développeuse</td>
+                    <td>450000</td>
+                </tr>
+                <tr></tr>
+                    <td>5</td>
+                    <td>Ibrahima</td>
+                    <td>FALL</td>
+                    <td>Vente</td>
+                    <td>Commercial</td>
+                    <td>400000</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Bousso</td>
+                    <td>LEYE</td>
+                    <td>Informatique</td>
+                    <td>Développeuse</td>
+                    <td>450000</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Marie</td>
+                    <td>NDIAYE</td>
+                    <td>Vente</td>
+                    <td>Manager</td>
+                    <td>500000</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Jean</td>
+                    <td>FAYE</td>
+                    <td>Marketing</td>
+                    <td>Assistant</td>
+                    <td>250000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
