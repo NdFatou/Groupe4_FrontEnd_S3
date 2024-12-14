@@ -23,8 +23,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to right,#f2c790,#9f681c);
-    padding-top: 1rem;
+    background: linear-gradient(to right,#D9D9D9,#b4b3b2);
+    padding-top: 0.5rem;
 }
 
 .navbar-toggle {
@@ -44,15 +44,14 @@ body {
 
 .nav-links a{
     font-size: 1.3rem;
-    text-transform: uppercase;
-    color: white;
+    color: black;
     font-weight: bold;
     text-decoration: none;
     padding: 1rem 1rem;
 }
 
 .nav-links a.active, .nav-links a:hover{
-    background: rgb(248, 206, 91);
+    background: #dfb666;
 }
 
 .nav-links .contact-button {
@@ -75,7 +74,7 @@ body {
     width: 110px; /* Ajustez la largeur selon vos besoins */
     height: auto; /* Conserve le ratio d'aspect de l'image */
     margin-left:  1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.2rem;
 }
 
 
@@ -87,7 +86,7 @@ body {
 }
 
 .welcome-text {
-    font-size: 5rem; /* Taille de police pour le texte de bienvenue */
+    font-size: 6rem; /* Taille de police pour le texte de bienvenue */
     color: #fff; /* Couleur du texte */
 }
 
@@ -100,7 +99,7 @@ body {
 .button-container {
     display: flex;
     justify-content: center;
-    margin-top: 5em; /* Marge au-dessus des boutons */
+    margin-top: 6em; /* Marge au-dessus des boutons */
 }
 
 .action-button {
@@ -113,6 +112,7 @@ body {
     transition: background-color 0.3s; /* Effet de transition */
     font-size: 1.5rem;
     font-weight: bold;
+    margin-top: 5rem;
 }
 
 .light{
@@ -132,7 +132,7 @@ header {
     margin-bottom: 3rem;
 }
 
-.menu-title, .list-title {
+.title {
     text-transform: uppercase;
     text-align: center;
     font-size: 6rem;
@@ -215,6 +215,128 @@ header {
 }
 
 
+/* Page de réservation*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 80rem; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centre le formulaire */
+    padding: 2rem; /* Espacement interne */
+    background-color: #d9d9d9; /* Couleur de fond du formulaire */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem; /* Espace entre les lignes */
+}
+
+.form-group label {
+    margin-right: 10px; /* Espace entre le label et l'input */
+    width: 150px; /* Largeur fixe pour les labels */
+    font-weight: bold; /* Met le label en gras */
+    font-size: 18px;
+}
+.form-group label.name {
+    margin-right: 0; /* Espace entre le label et l'input */
+    
+}
+
+.form-group .nom , .prenom{
+    width:24rem;
+    align-items:right;
+}
+
+.form-group .input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-container {
+    margin-right: 20px; /* Espace entre l'input prénom et le label nom */
+}
+
+.form-group input {
+    flex: 1; /* Prend tout l'espace restant */
+    padding: 0.5rem; /* Espacement interne */
+    border: 1px solid #ccc; /* Bordure légère */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 1rem; /* Taille de police */
+    height: 2rem;
+}
+
+.form-group input:focus {
+    border-color: #C84C24; /* Couleur de la bordure au focus */
+    outline: none; /* Enlève le contour par défaut */
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centre le bouton */
+    margin-top: 2rem; /* Marge au-dessus du bouton */
+}
+
+.submit-button {
+    background-color: #C84C24; /* Couleur du bouton */
+    color: white; /* Couleur du texte */
+    padding: 0.8rem 2rem; /* Espacement interne */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 1.2rem; /* Taille de police */
+    cursor: pointer; /* Curseur pointer */
+    transition: background-color 0.3s; /* Effet de transition */
+}
+
+.submit-button:hover {
+    background-color: #9f681c; /* Couleur au survol */
+}
+
+/* Page galerie*/
+
+.resto_photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.resto_photo .card {
+    border: 2px solid #ddd; /* Bordure autour de chaque carte */
+    border-radius: 10px; /* Coins arrondis pour le cadre */
+    overflow: hidden; /* Pour s'assurer que le contenu ne déborde pas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère pour le cadre */
+    transition: transform 0.3s; /* Effet de transition pour l'animation */
+    width: 30rem;
+    height: 30rem;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    background-color: white;
+
+}
+
+.resto_photo .card:hover {
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+.resto_photo .card img {
+    width: 100%; /* Prend toute la largeur de la carte */
+    height: 40vh; /* Conserve le ratio d'aspect de l'image */
+}
+
+.resto_photo .card-body {
+    padding: 1rem; /* Espacement interne pour le contenu de la carte */
+    text-align: center; /* Centre le texte */
+}
+
+
+
+
 /* Media Queries */
 @media screen and (max-width: 1500px) {
     
@@ -229,7 +351,7 @@ header {
     }
 
       /* titre*/
-      .list-title{
+      .reservation-title .list-title{
         font-size: 4rem;
     }
 
@@ -372,6 +494,10 @@ header {
     .action-button {
         margin: 0 1rem; /* Marge entre les boutons */
     }
+
+    .resto_photo .card {
+        flex: 0 0 calc(50% - 1rem); /* 2 cards par ligne sur mobile */
+    }
 }
 
 hr {
@@ -459,6 +585,146 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #f1f1f1; /* Couleur de fond au survol des lignes */
 }
+
+/* Styles pour la section des témoignages */
+.testimonials {
+    
+    
+}
+
+.testimonial-slider {
+    display: flex; /* Utilise flexbox pour le diaporama */
+    flex-direction: column;
+    margin-left: 25rem;
+    margin-right: 25rem;
+}
+
+.testimonial {
+    display: flex;
+    min-width: 100%; /* Chaque témoignage occupe 100% de la largeur */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur */
+    padding: 2rem; /* Espacement interne */
+    transition: transform 0.5s ease; /* Transition pour l'effet de diaporama */
+}
+
+.testimonial .texte{
+    padding: 5rem;
+} 
+
+.testimonial img {
+    width: 25rem; /* Largeur de l'image */
+    height: 20rem; 
+    border-radius: 50%; /* Pour un effet circulaire */
+    margin-bottom: 1rem; /* Marge en bas de l'image */
+    
+}
+
+.testimonial h3 {
+    font-size: 1.5rem; /* Taille de police pour le nom */
+    margin: 0.5rem 0; /* Marge autour du nom */
+}
+
+.testimonial p {
+    font-size: 1rem; /* Taille de police pour le texte du témoignage */
+    color: #555; /* Couleur du texte */
+    text-align: left;
+}
+
+/* Styles pour la section de contact */
+.contacts {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.restaurant-info {
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.restaurant-info p {
+    margin: 5px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #C84C24;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #9f681c;
+}
+
+/* Styles pour les liens utiles */
+
+footer {
+    display: flex;
+    background-color:;
+}
+
+.useful-links, .social-media {
+    display: flex;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    width: 50%;
+}
+
+.useful-links {
+    padding-left: 8rem;
+}
+
+.useful-links h3, .social-media h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.useful-links ul, .social-media ul {
+    list-style-type: none;
+    padding-left:5rem ;
+}
+
+.useful-links li, .social-media li {
+    margin: 5px 0;
+    padding-bottom: 1rem;
+}
+
+.useful-links a, .social-media a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.useful-links a:hover, .social-media a:hover {
+    text-decoration: underline;
+}
+
+
 
 
 

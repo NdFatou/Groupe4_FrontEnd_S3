@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Amadou FAYE</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <section class="navigation">
+        <div>
+            <nav id="navbar">
+                <div class="navbar-brand">
+                    <a href="index.html">
+                        <img src="assets/images/logo2.png" alt="Logo restaurant">
+                    </a>
+                </div>
+                <div class="navbar-toggle" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('active');">
+                    ☰
+                </div>
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="index.html" >Accueil</a></li>
+                    <li class="nav-item"><a href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a href="reservation.html" class="active">Réservation</a></li>
+                    <li class="nav-item"><a href="galerie.html">Galerie</a></li>
+                    <li class="nav-item"><a href="temoignage.html">Témoignages clients</a></li>
+                    <li class="nav-item"><a href="employe.html">Employés</a></li>
+                    <li class="nav-item btn"><a href="contact.html" class="contact-button">Nous Contacter</a></li>
+                </ul>
+            </nav>
+        </div>
+       
+    </section>
+
+    <section>
+        <div></div>
+            <h2 class="list-title title">RESERVATION DE TABLE</h2>
+        </div>
+
+        <div class="container">
+            <form action="">
+                <div class="form-group">
+                    <label for="prenom">Prénom</label>
+                    <div class="input-container prenom">
+                        <input type="text" id="prenom" placeholder="Entrez votre prénom">
+                    </div>
+                    <label for="nom" class="name">Nom</label>
+                    <div class="input-container nom">
+                        <input type="text" id="nom" placeholder="Entrez votre nom">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Entrez votre email">
+                </div>
+                <div class="form-group">
+                    <label for="numero">Numéro de téléphone</label>
+                    <input type="number" id="numero" placeholder="Entrez votre numéro">
+                </div>
+                <div class="form-group">
+                    <label for="date">Date de réservation</label>
+                    <input type="date" id="date">
+                </div>
+                <div class="form-group">
+                    <label for="heure">Heure</label>
+                    <input type="time" id="heure">
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="submit-button">Réserver</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+ 
+
+</body>
+</html>

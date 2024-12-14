@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Amadou FAYE</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <section class="navigation">
+        <div>
+            <nav id="navbar">
+                <div class="navbar-brand">
+                    <a href="index.html">
+                        <img src="assets/images/logo2.png" alt="Logo restaurant">
+                    </a>
+                </div>
+                <div class="navbar-toggle" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('active');">
+                    ☰
+                </div>
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="index.html" >Accueil</a></li>
+                    <li class="nav-item"><a href="menu.html" >Menu</a></li>
+                    <li class="nav-item"><a href="reservation.html">Réservation</a></li>
+                    <li class="nav-item"><a href="galerie.html">Galerie</a></li>
+                    <li class="nav-item"><a href="temoignage.html" class="active">Témoignages clients</a></li>
+                    <li class="nav-item"><a href="employe.html">Employés</a></li>
+                    <li class="nav-item btn"><a href="contact.html" class="contact-button">Nous Contacter</a></li>
+                </ul>
+            </nav>
+        </div>
+       
+    </section>
+
+    <section class="testimonials">
+        <h2 class="title">Témoignages clients</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <img src="assets/images/maimouna.jpg" alt="Client 1">
+                <div class="texte">
+                    <h3>Maïmouna KEITA</h3>
+                    <p>"C'était une expérience incroyable! La nourriture était délicieuse.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"</p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <img src="assets/images/pierre.jpg" alt="Client 2">
+                <div class="texte">
+                    <h3>Pierre SANIA</h3>
+                    <p>"Un service exceptionnel et une ambiance agréable.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"</p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <img src="assets/images/aicha.jpg" alt="Client 3">
+                <div class="texte">
+                    <h3>Aïcha DIATTA</h3>
+                    <p>"Je recommande vivement ce restaurant à tous! 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html> 
