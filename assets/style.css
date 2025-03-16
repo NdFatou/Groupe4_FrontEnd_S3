@@ -693,7 +693,11 @@ tr:hover {
 
 /* Styles pour la section de contact */
 .imgback{
+<<<<<<< HEAD
     background: url('images/back.jpg') no-repeat ;
+=======
+    background: url('/assets/images/back.jpg') no-repeat ;
+>>>>>>> 7023c1779b20eb34fcdac098abfc9655e1529929
     background-size: cover;
 }
 
